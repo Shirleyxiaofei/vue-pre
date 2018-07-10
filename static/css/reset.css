@@ -1,0 +1,175 @@
+@charset"utf-8";
+/**
+ * reset
+ */
+ html {
+  font-size: 100px;
+}
+html, body {
+  background: #eee;
+  color: #595757;
+}
+body, div, dl, dt, dd, ul, li, ol, h1, h2, h3, h4, h5, h6, img, form, input, textarea, p, a, td, tr, th, hr, button, footer, header, section {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body, button, input, select, textarea {
+  font-size: 16px;
+  font-family: "微软雅黑","Microsoft YaHei",'Helvetica Neue', Arial, 'Liberation Sans', FreeSans, 'Hiragino Sans GB', sans-serif;
+  border: 0;
+}
+
+img{
+  width: 100%;
+  vertical-align: middle;
+}
+hr{
+  margin: .5em 0;
+}
+
+input{
+  background: #f9f1ee;
+}
+/*取消按钮默认样式*/
+button,
+input[type='button'],
+input[type='submit'] {
+  outline: none;
+  background: #e9ce8b;
+}
+button,
+input[type='button'],
+input[type='submit'],
+.gotop{
+  cursor: pointer;
+}
+button:active,
+input[type='button']:active,
+input[type='submit']:active,
+.gotop:active {
+  transform: translateZ(0) scale(.999) translate3d(1px, 1px,0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+input::-webkit-input-placeholder {
+  color: #b5b5b6;
+}
+textarea::-webkit-input-placeholder {
+  color: #b5b5b6;
+}
+input::-webkit-input-speech-button {
+  display: none;
+}
+
+ol, ul {
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:focus, *:focus {
+  outline: none;
+}
+a:hover,
+.a_on{
+  color: #D7000F;
+}
+.oh {
+  overflow: hidden;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.cb {
+  clear: both;
+}
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.posi-sta {
+  position: static;
+}
+.star{
+  position: absolute;
+  color: #7d0000;
+}
+.tips{
+  position: absolute;
+  right: .5em;
+  top: .08rem;
+}
+.tac {
+  text-align: center;
+}
+.tal {
+  text-align: left;
+}
+.tar {
+  text-align: right;
+}
+
+.db {
+  display: block!important;
+}
+
+.dib {
+  display: inline-block;
+}
+.vab {
+  vertical-align: bottom;
+}
+.vam {
+  vertical-align: middle;
+}
+.vat {
+  vertical-align: top;
+}
+/*滚动条样式*/
+.scrollbar::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 10px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 0px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+/**
+ * 整体布局
+ */
+ html,body{
+  width: 100%;
+  min-width: 1200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin: 0 auto;
+  font-size: 16px;
+}
+@media screen and (max-width: 1600px) {
+  html,body,button, input, select, textarea{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  html,body,button, input, select, textarea{
+    font-size: 14px;
+  }
+}
